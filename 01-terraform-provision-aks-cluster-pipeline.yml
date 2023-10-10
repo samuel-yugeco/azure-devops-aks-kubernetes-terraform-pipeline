@@ -15,7 +15,7 @@ pool:
 ## Step-3: Validate Terraform Manifests
 
 stages:
-- stage: Terraform Validate
+- stage: TerraformValidate
   jobs:
     - job: TerraformValidateJob
       continueOnError: false
