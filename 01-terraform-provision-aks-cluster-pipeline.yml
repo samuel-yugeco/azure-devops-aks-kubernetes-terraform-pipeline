@@ -110,6 +110,7 @@ stages:
 # Next Stage to deploy QA
 
     - deployment: DeployQAAKSCluster
+      dependsOn: DeployAKSCluster
       displayName: DeployQAAKSCluster
       pool:
         vmimage: 'ubuntu-latest'
